@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h3>Formulario muy sencillo</h3>
+
+    <!--
+    <form action="javascript:recibeform()" method="post" autocomplete="off">
+     -->
+
+    <form action="./procesaform.php" method="post" autocomplete="off">
+      <label for="nombre">Escribe tu nombre: </label>
+
+      <input
+        type="text"
+        name="nombre"
+        value=""
+        placeholder="Escribe tu nombre"
+      />
+
+      <br />
+
+      <input type="submit" value="Enviar" />
+      <br />
+      <hr />
+      <br />
+
+      <!--jugar con los HTML Input Types-->
+
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" value="John" /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" value="Doe" /><br /><br />
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
+
+      <br />
+      <hr />
+      <br />
+      <p>Input Type Radio</p>
+      <p>Elige tu lenguaje web favorito:</p>
+      <input type="radio" id="html" name="fav_language" value="HTML" />
+      <label for="html">HTML</label><br />
+      <input type="radio" id="css" name="fav_language" value="CSS" />
+      <label for="css">CSS</label><br />
+      <input
+        type="radio"
+        id="javascript"
+        name="fav_language"
+        value="JavaScript"
+      />
+      <label for="javascript">JavaScript</label>
+
+      <br />
+      <hr />
+      <br />
+      <p>Input Type Checkbox</p>
+      <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+      <label for="vehicle1"> I have a bike</label><br />
+      <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+      <label for="vehicle2"> I have a car</label><br />
+      <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+      <label for="vehicle3"> I have a boat</label>
+
+      <br />
+      <hr />
+      <br />
+      <p>Input Type Button</p>
+      <input type="button" onclick="alert('Hola mundo!')" value="Click Me!" />
+
+      <br />
+      <hr />
+      <br />
+      <p>Input Type Color</p>
+      <label for="favcolor">Select your favorite color:</label>
+      <input type="color" id="favcolor" name="favcolor" />
+
+      <br />
+      <hr />
+      <br />
+      <p>Input Type Date</p>
+      <label for="birthday">Birthday:</label>
+      <input type="date" id="birthday" name="birthday" />
+
+      <br />
+      <hr />
+      <br />
+      <p>Input Type DateMax</p>
+      <label for="datemax">Enter a date before 1980-01-01:</label>
+      <input type="date" id="datemax" name="datemax" max="1979-12-31" />
+
+      <br />
+      <hr />
+      <br />
+      <p>Input Type DateMin</p>
+      <label for="datemin">Enter a date after 2000-01-01:</label>
+      <input type="date" id="datemin" name="datemin" min="2000-01-02" />
+
+      <br />
+      <hr />
+      <br />
+      <p>Input Type Datetime-local</p>
+      <label for="birthdaytime">Birthday (date and time):</label>
+      <input type="datetime-local" id="birthdaytime" name="birthdaytime" />
+
+      <br />
+      <hr />
+      <br />
+      <p>Input Type Email</p>
+      <label for="email">Enter your email:</label>
+      <input type="email" id="email" name="email" />
+
+      <br />
+      <hr />
+      <br />
+      <p>Input Type Image</p>
+      <input
+        type="image"
+        src="img_submit.gif"
+        alt="Submit"
+        width="48"
+        height="48"
+      />
+
+      <br />
+      <hr />
+      <br />
+      <p>Input Type File</p>
+      <label for="myfile">Select a file:</label>
+      <input type="file" id="myfile" name="myfile" />
+
+      <br />
+      <hr />
+      <br />
+      Selecciona la opción deseada:
+      <select>
+        <option disabled selected>-Elige una opción-</option>
+        <option value="1">Opción 1</option>
+        <option value="2">Opción 2</option>
+        <option value="3">Opción 3</option>
+        <option value="4">Opción 4</option>
+        <option value="5">Opción 5</option>
+      </select>
+    </form>
+
+    <script type="text/javascript">
+      function recibeform() {
+        // body...
+        alert("Formulario recibido");
+      }
+    </script>
+  </body>
+</html>

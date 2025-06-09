@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./syle.css">
+  <link rel="stylesheet" href="./fonts.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <h1 class="winky-sans-black">Practica formularios</h1>
+  </header>
+  <main>
+    <h2 class="text">Ejemplos formularios</h2>
+    <div class="container-login">
+      <div class="container-left back">
+        <div class="img-home"></div>
+        <div class="text">
+          <p>Lorem ipsum dolor</p>
+          <p>sit amet.</p>
+        </div>
+        <div class="img-back"></div>
+      </div>
+      <form class="container-form" action="" method="post" autocomplete="off">
+        <div class="container-buttons">
+          <input type="button" value="sign in" id="ingresar">
+          <input type="button" value="sign up" id="registrar">
+        </div>
+        <h3 class="text">Inicio de sesión</h3>
+        <div class="input">
+          <label for="username">Nombre de usuario:</label>
+          <input 
+            type="text" 
+            name="username" 
+            id="username" 
+            placeholder="usuario" 
+            required 
+            minlength="4" 
+            maxlength="20" 
+            pattern="[A-Za-z0-9_]+"
+            title="Solo letras, números y guiones bajos. Mínimo 4 caracteres.">
+        </div>
+        <div class="input">
+          <label for="password">Contraseña:</label>
+          <input 
+            type="password" 
+            name="password" 
+            id="password" 
+            placeholder="*****" 
+            required 
+            minlength="6"
+            title="Mínimo 6 caracteres.">
+        </div>
+        <div class="input">
+          <input type="checkbox" name="sesion" id="sesion">
+          <label for="sesion">Mantener sesión iniciada</label>
+        </div>
+        <div class="input">
+          <input type="submit" value="Enviar" id="envio">
+        </div>
+      </form>       
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,202 @@
+:root {
+    --green: #a9ff5d;
+    --yellow: #fffb5b;
+    --black: #142406;
+    --gray: #494949;
+    --white: #fffaf2;
+    --white-hoover: #f1efec;
+    --background-color: #DA5A51;
+    --background-login: #13263A;
+    --white-font: #f5f5f5;
+    --background-color-hover: #ff665b;
+    --background-color-focus: #cf463d;
+    --background-signin:#606060;
+    --background-signin-focus:#545454;
+  }
+
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+html{
+    font-size: 50%;
+    
+    height: 100vh;
+    
+}
+
+header{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+
+.container-login{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.img-home{
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  background-image: url(./miscellaneous/casa.png);
+  background-size: cover;
+  height: 25px;
+  width: 25px;
+}
+
+.img-back{
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  background-image: url(./miscellaneous/fondorocket-removebg-preview.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 90%;
+  height: 300px;
+
+}
+
+.back{
+  background-color: var(--background-color);
+}
+.login{
+  background-color: var(--background-login);
+  color: var(--white-font)
+}
+.text{
+  text-align: center;
+}
+
+.text p{
+  font-size: 3rem;
+}
+.container-left{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  border:none;
+  border-radius: 1rem 0rem 0rem 1rem;
+  
+  
+}
+
+
+.container-form{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  width: 20%;
+  background-color: var(--background-login);
+  border-radius: 0 1rem 1rem 0;
+
+}
+
+.container-form h3,p, label{
+  color: var(--white);
+}
+.container-form h3,label{
+  font-size: 2rem;
+}
+
+.container-buttons{
+position: absolute;
+top:2rem;
+right: 2.5rem;
+}
+
+.container-buttons input[type="button"]{
+  background-color: var(--background-signin);
+  border: none;
+  font-size: 1rem;
+  color: var(--white-font);
+  padding: .5rem 1rem;
+  
+}
+
+.container-buttons input[type = "button"]:hover{
+background-color: var(--background-signin-focus);
+cursor: pointer;
+}
+.container-buttons input[type = "button"]:focus{
+  background-color: var(--background-color-hover);
+}
+
+.container-buttons input[id = "ingresar"]{
+  border-radius: 2rem 0 0 2rem;
+}
+
+.container-buttons input[id = "registrar"]{
+  border-radius:  0 2rem 2rem 0;
+}
+
+.input{
+  width: 80%;
+}
+
+.input input[type="text"],input[type="password"]{
+  color: var(--white-font);
+  background: transparent;
+  border: none;
+  border-bottom: var(--gray) 1px solid;
+  outline: none;
+  padding-bottom: 1rem;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.input input[type="checkbox"]{
+ appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: var(--white) solid 0.5px;
+  margin-right: .5rem;
+  /*all: unset;*/
+ /*outline: none;*/
+}
+
+.input input[type="checkbox"]:hover{
+  cursor: pointer;
+  border-color: var(--white-hoover);
+ }
+
+ .input input[type="checkbox"]:checked{ 
+  background-color: var(--background-color);
+  background-image: url(../miscellaneous/marca-de-verificacion.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1rem;
+  transition: background-color 200ms ease-in-out, background-image 300ms ease-in-out;
+ }
+
+.input input[type="button"]{
+  background-color: var(--background-color);
+  color: var(--white);
+  border: none;
+  border-radius: 1.25rem;
+  padding: .625rem 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.input input[type="button"]:hover{
+  background-color: var(--background-color-hover);
+  cursor: pointer;
+
+}
+
+.input input[type="button"]:focus{
+  background-color: var(--background-color-focus);
+}
+
+
+ 
